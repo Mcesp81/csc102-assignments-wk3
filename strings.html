@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--csc102: 0ct2023 
+        Marco Cespedes
+        mcespedes81068@uat.edu.com-->
+<!--Input validation and Pallindrome assignments-->
+
+<head>
+    <!--link to js file string code for html operation-->
+    <script src="stringcode.js"></script>
+    <!--link to css file for user friendly appareance-->
+    <link rel="stylesheet" href="stringsStyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tile of site page-->
+    <title>Input Validation</title>
+</head>
+
+<body>
+    <h1>Welcome to my strings.html</h1>
+    <h2>Input valadation</h2>
+    <!--display of succesful data input-->
+    <div id="loginstatus"> Submit to Login</div>
+    <p>
+        Sumbit Data for Validation
+    </p>
+    <!--input area of where to put credantials for verification-->
+    <form id="creditSubmit" onsubmit="return false">
+        First Name:<input type="text" id="fName"><br>
+        Last Name:<input type="text" id="lName"><br>
+        Zipcode:<input type="text" id="zipcode"><br>
+        <br>
+        <input type="submit" onclick="checkcreds();">
+    </form>
+    <br>
+    <br>
+    <h2>Palindrome check</h2>
+    <br>
+    <!--dispaly of true or false on palindrome checker-->
+    <div id="palinstatus">Palindrome Status</div>
+    <br>
+    <!--input area for possible palindrome-->
+    <form id="palinsubmit" onsubmit = "return false">
+        Enter possible Palindrome: <input type="text" id="palininput"><br>
+        <br>
+        <input type="submit" onclick="checkpalin();">
+    </form>
+</body>
+
+</html>
